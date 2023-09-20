@@ -32,7 +32,7 @@ class SitesFile {
    * @return array
    *   Contents of the $sites array.
    */
-  private function getEntries(): array {
+  public function getEntries(): array {
     if (!is_file($this->path)) {
       throw new \RuntimeException("Cannot read sites file: $this->path");
     }
